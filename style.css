@@ -145,6 +145,7 @@ main#home h1 {
   height: 100vh;
   overflow: hidden;
 }
+
 .menu-nav {
   margin: 0;
   padding: 0;
@@ -266,6 +267,7 @@ main#home h1 {
 
 .work-btn {
   padding: 6px 8px;
+  margin-bottom: 6px;
 }
 
 .work-btn:hover {
@@ -288,4 +290,38 @@ main#home h1 {
   background: #2b2b2b;
   color: #444;
   height: 60px;
+}
+@media (max-width: 500px) {
+  main {
+    align-items: center;
+    text-align: center;
+  }
+  .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  main#home h1 {
+    margin-top: 10vh;
+  }
+  .menu-nav,
+  .menu-branding {
+    float: none;
+
+    width: 100%;
+  }
+  .menu-branding {
+    height: 25vh;
+  }
+  .menu-nav {
+    height: 75vh;
+  }
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
+  }
 }
