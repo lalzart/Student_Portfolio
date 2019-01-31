@@ -220,8 +220,22 @@ main#home h1 {
   min-height: 300px;
 }
 .me-info {
-  color: #fff;
+  color: #ffc109;
 }
+.job h6 {
+  font-size: 14px;
+  margin: 0;
+  text-decoration: underline;
+}
+.job h5 {
+  font-size: 14px;
+  margin: 8px 22px;
+}
+.job p {
+  font-size: 12px;
+  margin-left: 22px;
+}
+/* CONTACT PAGE */
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -252,12 +266,18 @@ main#home h1 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.project-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 8px;
+}
 .projects img {
   width: 100%;
   border: 3px solid #aaa;
 }
 
 .item a {
+  position: relative;
   margin-left: 10px;
   display: block;
 }
@@ -282,6 +302,21 @@ main#home h1 {
 .btn-light {
   background: #ccc;
   color: #333;
+}
+
+.project-description {
+  visibility: hidden;
+  position: absolute;
+  background: #aaa;
+  color: #2b2b2b;
+  top: 0;
+  bottom: 0;
+
+  padding: 20px 8px;
+}
+
+.img-link:hover .project-description {
+  visibility: visible;
 }
 
 #main-footer {
@@ -323,5 +358,12 @@ main#home h1 {
       "job2"
       "job3";
     grid-template-columns: 1fr;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .project-title {
+    font-size: 16px;
   }
 }
